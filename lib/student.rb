@@ -32,9 +32,9 @@ class Student
     end
 
     def self.create(:name, :grade)
-      student_new = Student.new(name, grade)
-      student_new.save
-      student_new
+      student = Student.new(name, grade)
+      student.save
+      student
     end
 
 
